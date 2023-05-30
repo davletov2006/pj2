@@ -1,0 +1,175 @@
+.footer{
+     position: relative;
+     background-color:#1E212C ;
+
+     &_row{
+        background-color:#1E212C ;
+     }
+   
+    
+    &_content{
+        @include flex(start,space-between);
+        padding: 80px 0 50px 0;
+
+        &_socialmedia{
+            margin-right: 30px;
+               
+           &_icons{
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+            opacity: 60%;
+            margin-bottom: 15px;
+
+            & path{
+            transition: all 0.2s ease-in-out;
+
+            }
+
+            .twitter:hover path{
+              fill:$white;
+              opacity: 30%;
+             
+            }
+            .facebook:hover path{
+                fill:$white;
+                opacity: 30%;
+            }
+            .instagram:hover path{
+                fill:$white;
+                opacity: 30%;
+            }
+            .linked_in:hover path{
+                fill:$white;
+                opacity: 30%;
+            }
+            .youtube:hover path{
+                fill:$white;
+                opacity: 30%;
+            }
+            .telegram:hover path{
+                fill:$white;
+                opacity: 30%;
+            }
+        
+           }
+
+           &_text{
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: $white;
+            opacity: 0.6;
+           }
+
+        }
+
+        &_map{
+            @include flex (start,center);
+            flex-direction:column ;
+            color: $white;
+            margin-right: 40px;
+            gap: 13px;
+
+            &_text{
+                font-weight: 700;
+                font-size: 7px;
+                line-height: 180%;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $white;
+                margin-bottom: 10px;
+            }
+            &_subtitle{
+                color: $white;
+                opacity: 0.6;
+            }
+        }
+        
+
+        &_contact{
+            @include flex (start,center);
+            flex-direction: column;
+            margin: 0 40px 0 40px;
+
+            &_button{
+                @include flex (center,center);
+                background-color: transparent;
+                border: none;
+                
+
+                &_text{
+                    color: $white;
+                    opacity: 0.6;
+                    padding: 8px 5px;
+                }
+
+            
+            }
+            
+            &_text{
+                font-weight: 700;
+                font-size: 8px;
+                line-height: 150%;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                
+            }
+        }
+
+        &_register{
+
+                &_panel{
+                    padding-left: 20px;
+                    width: 286px;
+                    height: 36px;
+                    background: rgba(255, 255, 255, 0.12);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 4px;
+                    color: $white;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+
+                    &:active{
+                        border: none;
+                    }
+
+
+
+                }
+        }
+    }
+    &_desc{
+        @include flex(center,space-between);
+        padding: 20px 0 20px 0;
+        color: $white;
+
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: calc( 100% + 335px);
+            height: 60px;
+            background:$white;
+            opacity: 0.05;
+            transform: translateX(-30%);
+        }
+        
+        &_link{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            color:$white;
+            z-index: 5;
+
+        }
+
+    }
+    &_button{
+        color: $white;
+    }
+}

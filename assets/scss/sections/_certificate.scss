@@ -1,0 +1,22 @@
+.certificate{
+    @include flex(center,center);
+
+    &_row{
+        @include flex(center, space-between);
+        gap: 50px;
+        
+        
+    }
+
+    &_content{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 160%;
+        color: #1E212C;
+
+
+        &_logos{
+            @include flex(center,center);
+        }
+    }
+}

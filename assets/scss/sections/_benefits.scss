@@ -1,0 +1,59 @@
+.benefits{
+    @include flex(center,center);
+    flex-direction:column;
+    
+
+    &_title{
+        @include flex(center,center);
+        flex-direction: column;
+
+    }
+    &_info{
+        @include flex(center,space-between);
+        margin-bottom: 70px;
+
+        &_button{
+            @include flex(center,center);
+            gap: 15px;
+            border:2px solid transparent;
+            color: #9A9CA5;
+           
+            &:hover{
+                border: 2px solid $primary;
+                background-color: transparent;
+                color: $primary;
+
+            }
+            
+            
+                
+            
+        }
+
+    }
+
+    &_desc{
+     @include flex(center,center);
+      
+    &_row{
+     @include flex(center,space-between);
+
+      &_text{
+
+        &_title{
+           text-transform: none;
+        }
+        &_subtitle{
+            width: 70%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #424551;
+            
+        }
+      }
+    
+    }
+       
+    }
+}
